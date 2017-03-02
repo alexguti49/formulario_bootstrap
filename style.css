@@ -1,0 +1,60 @@
+/*
+* CHECKBOX DINAMICO - ACEPTAR TERMINOS Y CONDICIONES 
+*/
+[type="checkbox"]{display:none;}
+.lb-ch{
+  margin-left:.5em;
+  font-size:1.3em;
+}
+.lb-ch:before{
+  content:'';
+  border: solid .15em;
+  border-radius: 4px;
+  width: 1.3em;
+  height: 1.3em;
+  position: absolute;
+  left:0em;
+  transition: all 0.2s;
+  transform: rotate(0deg);
+  text-align: center;
+}
+[type="checkbox"]:checked + .lb-ch:before{
+  color: green;
+  border:1em;
+  content: '\f14a';
+  font-size:1.55em;
+  margin:-7px -7px;
+  font-family: FontAwesome;
+  transform: rotate(360deg);
+}
+[type="checkbox"]:checked + .lb-ch{color: green;}
+/*
+* RADIO BUTTONS DINAMICOS 
+*/
+[type="radio"]{display:none;}
+.lb-ra{
+  margin-left:.5em;
+  font-size:1.3em;
+}
+.lb-ra:before{
+  content:'';
+  border: solid .15em;
+  border-radius: 1em;
+  width: 1.3em;
+  height: 1.3em;
+  position: absolute;
+  left:0em;
+  transition: all 0.2s;
+  transform: rotate(0deg);
+  text-align: center;
+}
+[type="radio"]:checked + .lb-ra:before{
+  color: green;
+  border:0em;
+  content: '\f058';
+  font-size:1.55em;
+  margin:-7px -7px;
+  font-family: FontAwesome;
+  transform: rotate(360deg);
+}
+[type="radio"]:checked + .lb-ra{color: green;}
