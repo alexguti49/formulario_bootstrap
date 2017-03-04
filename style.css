@@ -1,5 +1,5 @@
 /*
-* CHECKBOX DINAMICO - ACEPTAR TERMINOS Y CONDICIONES 
+* CHECKBOX DINAMICO - ACEPTAR TERMINOS Y CONDICIONES
 */
 [type="checkbox"]{display:none;}
 .lb-ch{
@@ -28,8 +28,9 @@
   transform: rotate(360deg);
 }
 [type="checkbox"]:checked + .lb-ch{color: green;}
+
 /*
-* RADIO BUTTONS DINAMICOS 
+* RADIO BUTTONS DINAMICOS
 */
 [type="radio"]{display:none;}
 .lb-ra{
